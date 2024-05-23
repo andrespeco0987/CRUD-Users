@@ -9,5 +9,8 @@
   },
   "keywords": [],
   "author": "Andres Felipe Rangel Peña",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
 }
