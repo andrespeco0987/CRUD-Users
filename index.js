@@ -1,16 +1,5 @@
-"use strict";
-const express = require("express");
+import servidor from "./servidor.js";
 
-const servidor = express();
-
-servidor.get("/", (solicitud, respuesta) => {
-	respuesta.json({
-		saludo: "Hola , que tal"
-	});
+servidor.listen(3000, () => {
+	console.log("Servidor corriendo en el puerto 3000");
 });
-
-/* servidor.get("/xx", (solicitud, respuesta) => {
-	respuesta.redirect(301, "https://www.google.com/");
-}); */
-
-servidor.listen(3000);
