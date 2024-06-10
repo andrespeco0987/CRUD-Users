@@ -3,8 +3,8 @@ import mongoose from "mongoose";
 mongoose
 	.connect(process.env.MONGODB_ATLAS_URI)
 	.then((dato) => {
-		console.log("conectado a mongo atlas");
+		console.log("Connected to Mongo Atlas");
 	})
 	.catch((error) => {
-		console.log("ocurrio un error, no hay conexion con mongo atlas");
+		console.log("An error occurred, there is no connection to mongo atlas");
 	});

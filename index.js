@@ -1,7 +1,7 @@
 import "dotenv/config";
-import "./conexionDB.js";
-import servidor from "./servidor.js";
+import "./conecctionDB.js";
+import server from "./server.js";
 
-servidor.listen(3000, () => {
-	console.log("Servidor corriendo en el puerto 3000");
+server.listen(3000, () => {
+	console.log("Running on port 3000");
 });
