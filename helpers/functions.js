@@ -11,3 +11,15 @@ export function generateToken(payload) {
 		});
 	});
 }
+
+export function verifyToken(token) {
+	return new Promise((solve, decline) => {
+		jwt.verify(token, "llave secreta", (error, decoded) => {
+			if (error) {
+				decline(error);
+			} else {
+				solve(decoded);
+			}
+		});
+	});
+}
